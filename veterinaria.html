@@ -4,16 +4,17 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/fale conosco.css">
     <SCript>
 
-        function fechaDivResultado(){
+        function fechaDivResultado() {
             var divresultado = document.getElementById("div-resultado");
             divresultado.style = "display:none"
         }
 
 
         function ProcessaForm() {
-            
+
             var nome = document.getElementById("nome");
             var sobrenome = document.getElementById("sobrenome");
             var cpf = document.getElementById("cpf");
@@ -30,60 +31,36 @@
             console.log("repita_senha " + repita_senha.value)
 
             var divresultado = document.getElementById("div-resultado");
-            divresultado.innerHTML = 
-            "<div>" +
-                "<div onclick='fechaDivResultado();'>X</div>"+
-                "<div>nome:" + nome.value + "</div>"+
-                "<div>sobrenome:" + sobrenome.value + "</div>"+
-                "<div>cpf:" + cpf.value + "</div>"+
-                "<div>celular:" + celular.value + "</div>"+
-                "<div>email:" + Email.value + "</div>"+
-                "<div>senha:" + senha.value + "</div>"+
-                "<div>repita_senha:" + repita_senha.value + "</div>"+
-            "</div>";
+            divresultado.innerHTML =
+                "<div>" +
+                "<div onclick='fechaDivResultado();'>X</div>" +
+                "<div>nome:" + nome.value + "</div>" +
+                "<div>sobrenome:" + sobrenome.value + "</div>" +
+                "<div>cpf:" + cpf.value + "</div>" +
+                "<div>celular:" + celular.value + "</div>" +
+                "<div>email:" + Email.value + "</div>" +
+                "<div>senha:" + senha.value + "</div>" +
+                "<div>repita_senha:" + repita_senha.value + "</div>" +
+                "</div>";
             divresultado.style = "display:block"
         }
     </SCript>
 
     <title>Melhor Amigo Clínica Veterinária</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
 
-        h1 {
-            color: #2e8b57;
-        }
-
-        h2 {
-            font-weight: normal;
-            color: #333;
-        }
-
-        nav {
-            margin: 20px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #2e8b57;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Melhor Amigo Clínica Veterinária</h1>
-    <nav>
-        <a href="veterinária.html">Página Principal</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="servicos.html">Nossos serviços</a>
-        <a href="contato.html">Fale Conosco</a>
-    </nav>
+    <header>
+        <h1>Melhor Amigo Clínica Veterinária</h1>
+        <nav>
+            <ul>
+                <li><a href="servicos.html">Nossos Serviços</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
     <H2>Na Melhor Amigo Clínica Veterinária,
         acreditamos que cada pet merece cuidado, carinho e atenção especial.
         Oferecemos consultas, cirurgias e serviços de banho e tosa
@@ -92,6 +69,7 @@
     <img src="img/homevet.jpg" style="width: 42%;" alt="uma ilustração de vários animais.">
     <div>
         <h3>Cadastre-se em nosso site!</h3>
+        <h5>Ao terminar de preencher o formulário, clique no "X" para remover as confirmações de resposta!</h5>
         <form action="#">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome">
@@ -134,5 +112,10 @@
     <p>Serviço de higiene completo com carinho e cuidado.</p>
     <a href="servicos.html">Saiba mais</a>
 </body>
+<footer>
+    <p>Este site é um trabalho da disciplina <strong>Programação Web 1</strong>
+        do segundo período do curso de <strong>Sistemas de Informação</strong> da Doctum.</p>
+    <p>&copy; 2025 - Rodrigo de Oliveira - Mateus Silva - Lucas Garcia - Lucas de Matos</p>
+</footer>
 
 </html>

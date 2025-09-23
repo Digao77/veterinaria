@@ -4,16 +4,17 @@
 
 
 <head>
+    <link rel="stylesheet" href="css/fale conosco.css">
+    <title>Contato - Melhor Amigo Clínica Veterinária</title>
     <SCript>
 
-        function fechaDivResultado(){
+        function fechaDivResultado() {
             var divresultado = document.getElementById("div-resultado");
             divresultado.style = "display:none"
         }
 
-
         function ProcessaForm() {
-            
+
             var nome_tutor = document.getElementById("nome_tutor");
             var nome_pet = document.getElementById("nome_pet");
             var especie = document.getElementById("especie");
@@ -32,67 +33,42 @@
             console.log("peso_aprox " + peso_aprox.value)
             console.log("vacina " + vacina.value)
             console.log("obs " + obs.value)
-            
+
             var divresultado = document.getElementById("div-resultado");
-            divresultado.innerHTML = 
-            "<div>" +
-                "<div onclick='fechaDivResultado();'>X</div>"+
-                "<div>nome_tutor:" + nome_tutor.value + "</div>"+
-                "<div>nome_pet:" + nome_pet.value + "</div>"+
-                "<div>especie:" + especie.value + "</div>"+
-                "<div>raca:" + raca.value + "</div>"+
-                "<div>idade:" + idade.value + "</div>"+
-                "<div>sexo:" + sexo.value + "</div>"+
-                "<div>peso_aprox:" + peso_aprox.value + "</div>"+
-                "<div>vacina:" + vacina.value + "</div>"+
-                "<div>obs:" +obs.value + "</div>"+
-            "</div>";
+            divresultado.innerHTML =
+                "<div>" +
+                "<div onclick='fechaDivResultado();'>X</div>" +
+                "<div>nome_tutor:" + nome_tutor.value + "</div>" +
+                "<div>nome_pet:" + nome_pet.value + "</div>" +
+                "<div>especie:" + especie.value + "</div>" +
+                "<div>raca:" + raca.value + "</div>" +
+                "<div>idade:" + idade.value + "</div>" +
+                "<div>sexo:" + sexo.value + "</div>" +
+                "<div>peso_aprox:" + peso_aprox.value + "</div>" +
+                "<div>vacina:" + vacina.value + "</div>" +
+                "<div>obs:" + obs.value + "</div>" +
+                "</div>";
             divresultado.style = "display:block"
         }
     </SCript>
-    
-    <title>Contato - Melhor Amigo Clínica Veterinária</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #2e8b57;
-        }
-
-        h2 {
-            font-weight: normal;
-            color: #333;
-        }
-
-        nav {
-            margin: 20px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #2e8b57;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Melhor Amigo Clínica Veterinária</h1>
-    <nav>
-        <a href="veterinária.html">Página Principal</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="servicos.html">Nossos Serviços</a>
-        <a href="contato.html">Fale Conosco</a>
-    </nav>
+    <header>
+        <div class="titulo">
+            <h1>Melhor Amigo Clínica Veterinária</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="veterinaria.html">Página Principal</a></li>
+                <li><a href="servicos.html">Nossos Serviços</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <h2>Entre em contato conosco</h2>
-    <img src="img/cachorrotelefonico.jpg" alt="uma mão segurando um telefone e um cachorro com a pata na orelha" 
+    <img src="img/cachorrotelefonico.jpg" alt="uma mão segurando um telefone e um cachorro com a pata na orelha"
         style="width: 40%;">
 
     <p>Nosso Endereço: Rua Fulano de Tal, 123 - Centro, Cataguases-MG</p>
@@ -101,47 +77,56 @@
     <p>Horário de atendimento:Segunda a Sábado, 8h às 18h</p>
     <div>
         <br>
-        <p>Agilize o atendimento preenchendo os dados do seu amigo</p>
+        <h3>Agilize o atendimento preenchendo os dados do seu amigo</h3>
+        <h5>Ao terminar de preencher o formulário, clique no "X" para remover as confirmações de resposta!</h5>
         <form>
             <form action="#">
-            <label for="nome_tutor">Nome do(a) Tutor(a)</label>
-            <input type="text" id="nome_tutor" name="nome_tutor">
-            <br>
-            <label for="nome_pet">Nome do(a) pet</label>
-            <input type="text" id="nome_pet" name="nome_pet">
-            <br>
-            <label for="especie">Espécie</label>
-            <input type="text" id="especie" name="especie">
-            <br>
-            <label for="raca">Raça</label>
-            <input type="text" id="raca" name="raca">
-            <br>
-            <label for="idade">Idade</label>
-            <input type="text" id="idade" name="idade">
-            <br>
-            <label for="sexo">sexo</label>
-            <select name="sexo" id="sexo">
-                <option value="macho">Macho</option>
-                <option value="femea">Femea</option>
-            </select>
-             <br>
-            <label for="peso_aprox">Peso aproximado</label>
-            <input type="text" id="peso_aprox" name="peso_aprox">
-            <br>
-            <label for="vacina">Vacinação em dia?</label>
-            <select name="vacina" id="vacina">
-                <option value="sim">Sim</option>
-                <option value="nao">Não</option>
-            </select>
-            <br>
-            <label for="obs">Alguma Necessidade especial / Observação médica?</label>
-            <input type="text" id="obs" name="obs">
-            <br>
-            <br>
-            <button type="button" onclick="ProcessaForm()">Finalizar</button>
-        </form>
+                <label for="nome_tutor">Nome do(a) Tutor(a)</label>
+                <input type="text" id="nome_tutor" name="nome_tutor">
+                <br>
+                <label for="nome_pet">Nome do(a) pet</label>
+                <input type="text" id="nome_pet" name="nome_pet">
+                <br>
+                <label for="especie">Espécie</label>
+                <input type="text" id="especie" name="especie">
+                <br>
+                <label for="raca">Raça</label>
+                <input type="text" id="raca" name="raca">
+                <br>
+                <label for="idade">Idade</label>
+                <input type="text" id="idade" name="idade">
+                <br>
+                <label for="sexo">sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="macho">Macho</option>
+                    <option value="femea">Femea</option>
+                </select>
+                <br>
+                <label for="peso_aprox">Peso aproximado</label>
+                <input type="text" id="peso_aprox" name="peso_aprox">
+                <br>
+                <label for="vacina">Vacinação em dia?</label>
+                <select name="vacina" id="vacina">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <br>
+                <label for="obs">Alguma Necessidade especial / Observação médica?</label>
+                <input type="text" id="obs" name="obs">
+                <br>
+                <br>
+                <button type="button" onclick="ProcessaForm()">Finalizar</button>
+            </form>
         </form>
     </div>
+    <div id="div-resultado" style="display: none;">
+        <p>Cadastro não Efetuado</p>
+    </div>
+    <footer>
+        <p>Este site é um trabalho da disciplina <strong>Programação Web 1</strong>
+            do segundo período do curso de <strong>Sistemas de Informação</strong> da Doctum.</p>
+        <p>&copy; 2025 - Rodrigo de Oliveira - Mateus Silva - Lucas Garcia - Lucas de Matos</p>
+    </footer>
 </body>
 
 </html>
