@@ -2,7 +2,7 @@
 font-family: Arial, sans-serif;
 text-align: center;
 margin: 0;
-padding: 0px 0px 0px 0px;
+padding: 1px 0px 0px 0px;
 }
 
 header {
@@ -12,6 +12,8 @@ header {
 
 h1 {
 color: #ffffff;
+margin-top:-60px;
+font-size:30px;
 }
 
 h2 {
@@ -26,7 +28,7 @@ nav ul {
     text-align: center;
     height: 40px;
     border-radius: 10px;
-    padding: 10px 0px 0px 10px
+    padding: 10px 0px 0px 300px
 }
 
 nav li {
@@ -36,7 +38,9 @@ nav li {
     min-width: 425px;
     float:left;
     border-radius: 10px;
-    margin: 0px 0px 0px 5px;
+    margin: 1px;
+    margin-right:10px;
+    margin-left:10px;
 }
 
 nav a {
@@ -55,4 +59,11 @@ footer {
 background-color: rgb(45, 140, 90);
 padding: 10px 0 10px 5px;
 display: block;
+}
+
+#logomarca1{
+    width:150px;
+    margin-left:-1750px;
+    border-radius:150px;
+    padding-top:7px;
 }
