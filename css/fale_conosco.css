@@ -7,17 +7,21 @@ padding: 0px 0px 0px 0px;
 
 header {
     background-color: rgb(45, 140, 90);
-    padding: 1px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 h1 {
 color: #ffffff;
+margin-top:-95px;
+font-size:40px;
 }
 
 h2 {
 font-weight: normal;
 color: rgb(0, 0, 0);
+padding: 2%;
 }
+
 
 
 nav ul {
@@ -26,23 +30,27 @@ nav ul {
     text-align: center;
     height: 40px;
     border-radius: 10px;
-    padding: 10px 0px 0px 10px
+    padding: 35px 0px 0px 150px;
 }
 
 nav li {
     list-style-type: none;
     background-color:rgba(25, 80, 50, 0.5);
-    width: 10%;
-    min-width: 425px;
+    width: 30%;
+    min-width: 315px;
     float:left;
     border-radius: 10px;
-    margin: 0px 0px 0px 5px;
+    margin: 1px;
+    margin-right:10px;
+    margin-left:10px;
 }
 
 nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: block; 
+    padding: 5px;
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -76,4 +84,18 @@ footer {
 background-color: rgb(45, 140, 90);
 padding: 10px 0 10px 5px;
 display: block;
+}
+
+#logomarca{
+    width:170px;
+    margin-left:-1000px;
+    border-radius:150px;
+    padding-top:5px;
+}
+
+.logomarca2{
+    width:170px;
+    margin-left:-1000px;
+    border-radius:150px;
+    padding-top:5px;
 }
